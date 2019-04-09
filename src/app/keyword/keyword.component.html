@@ -1,0 +1,112 @@
+<!-- <head>
+    <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+    <script>
+        zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/";
+        ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "ee6b7db5b51705a13dc2339db3edaf6d"];
+    </script>
+</head>
+
+<body>
+    <div id="myChart"></div>
+    <script>
+        var myConfig = {
+            type: 'wordcloud',
+            options: {
+                text: 'HI my name is ankita. united states of America.',
+            }
+        };
+
+        zingchart.render({
+            id: 'myChart',
+            data: myConfig,
+            height: 400,
+            width: '100%'
+        });
+    </script>
+</body> -->
+
+<div class="keyword" style="overflow:auto">
+
+  <div class="header">Keywords</div>
+  <div class="card">
+    <button class="btn btn-primary" (click)='display1()'>View Keyword List</button>
+    <button class="btn btn-danger" (click)='viewKeywords=false;'>Clear</button>
+    <button class="btn btn-warning" (click)="checkValue();"> Dummy </button>
+  </div>
+    <div *ngIf='viewKeywords'>
+    <div *ngFor='let key of text1'>
+        {{key}}
+      <br/>
+    </div>
+
+  </div>
+</div>
+<!-- <div class="card-header">Customize Survey</div>
+          <div class="card-body">
+              <div *ngIf='!custom'> 
+                  <span class="title">Select questions&nbsp;
+                      <span class="badge badge-pill badge-info">{{length}}</span></span>
+                      &nbsp;<button class="btn btn-primary" (click)='navigateNext()'>
+                          Next</button>
+                      
+                      
+                     <div col-container  *ngFor='let question of questions'>
+                      <div  [ngClass]="['row',selectedQuestions.indexOf(question)!=-1?'selectedQuery':'query']" (click)='select(question)'>
+                          <div class="col-lg-11" >
+                              <span >{{question}}</span>
+                          </div>
+                          
+                      </div></div></div> -->
+<!-- <div *ngIf='custom'>
+                      <span class="title">Custom survey</span>
+                      &nbsp;<button class="btn btn-primary" (click)='custom=false'>
+                          Back</button>
+                      &nbsp;<button class="btn btn-primary" (click)='navigateNext()'>
+                          Create raw survey</button>
+                         <div col-container  *ngFor='let query of selectedQuestions'>
+                          <div class="row">
+                              <div class="col-lg-11" >
+                                  <span class="query" (click)='deselect(query)'>{{query}}</span>
+                              </div>
+                              <div class="col-lg-1"><button class="btn btn-primary" (click)='deselect(query)'>-</button></div>
+                          </div></div>
+              </div> -->
+<!-- </div>
+      </div>
+  </div> -->
+
+<!-- <div class="container">
+      <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-6">
+              <div class="card">
+                  <div class="card-header">Default Survey</div>
+                  <div class="card-body">
+                      <div col-container  *ngFor='let question of questions'>
+                              <div class="row">
+                                      <div class="col-lg-11" >
+                                          <span class="query" (click)='select(question)'>{{question}}</span>
+                                      </div>
+                                      <div class="col-lg-1"><button class="btn btn-primary" (click)='select(question)'>+</button></div>
+                                  </div></div>
+                      </div>
+                  </div></div>
+          
+          <!-- <div class="col-sm-12 col-md-12 col-lg-6 test">
+                  <div class="card">
+                          <div class="card-header">Custom Survey</div>
+                          <div class="card-body">
+                              <div col-container  *ngFor='let query of selectedQuestions'>
+                                      <div class="row">
+                                              <div class="col-lg-11" >
+                                                  <span class="query" (click)='deselect(query)'>{{query}}</span>
+                                              </div>
+                                              <div class="col-lg-1"><button class="btn btn-primary" (click)='deselect(query)'>-</button></div>
+                                          </div></div>
+                              </div>
+                          </div>
+          </div>
+      </div>
+  </div>  -->
+
+<!-- 
+</div> -->

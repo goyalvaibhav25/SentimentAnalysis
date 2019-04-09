@@ -1,0 +1,25 @@
+.boxed {
+
+    border: 1px solid #3781C2 ;
+
+    height: 235px;
+
+    width: 100%;
+
+  }
+
+ 
+
+  .header{
+
+    background-color: #3781C2;
+
+    color: aliceblue;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    padding: 1px
+
+  }
